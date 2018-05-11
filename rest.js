@@ -2,7 +2,7 @@ var restify = require("restify");
 var server = restify.createServer();
 
 function respond(req, res, next) {
-    res.send('Hello Restify!');
+    res.send('Hello from webhook!');
 }
 
 server.get('/', respond);
